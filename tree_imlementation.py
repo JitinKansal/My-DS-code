@@ -1,3 +1,4 @@
+# Creating a new node for the binary tree.
 class BinaryTree():
 
     def __init__(self, data):
@@ -5,7 +6,7 @@ class BinaryTree():
         self.left = None
         self.right = None
 
-
+# Inorder traversal of the tree (using recurssion.)
 def inorder(root):
     if root:
         inorder(root.left)
@@ -14,14 +15,15 @@ def inorder(root):
 
         inorder(root.right)
 
-
+# postorder traversal of the tree (using recurssion.)
 def postorder(root):
     if root:
         postorder(root.left)
         postorder(root.right)
         print(root.data,end=" ")
-
-
+        
+        
+# preorder traversal of the tree (using recurssion.)
 def preorder(root):
     if root:
         print(root.data,end=" ")
